@@ -15,7 +15,7 @@ public class Main {
         taskService.addTask(new Tasks(2,"Task 2", LocalDate.of(2023,1,6)));
         taskService.addTask(new Tasks(3,"Task 3", LocalDate.of(2023,3,5)));
         taskService.addTask(new Tasks(4,"Appointment with client today evening", LocalDate.of(2023,3,5)));
-        taskService.addTask(new Tasks(1,"Task 2", LocalDate.of(2023,1,6)));
+        taskService.addTask(new Tasks(2,"Task 2", LocalDate.of(2023,1,6)));
 
 //        Getting tasks By given Date
         System.out.println("\n Getting tasks By given Date \n");
@@ -39,7 +39,7 @@ public class Main {
 //       Marking Task status as completed
         System.out.println("\n Marking Task status as completed \n");
 //        updating an existing task
-        System.out.println(taskService.markStatusAsCompleted(2));
+        System.out.println(taskService.markStatusAsCompleted(1));
 //       trying to updating a non existing task
         System.out.println(taskService.markStatusAsCompleted(12));
 
